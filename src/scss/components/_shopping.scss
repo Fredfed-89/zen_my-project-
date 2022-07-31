@@ -23,16 +23,17 @@
     margin-bottom: 22px;
     max-width: 480px;
     width: 100%;
+  }
+
+  &__icon {
+    padding-right: 25px;
     background-repeat: no-repeat;
     background-size: 22px 22px;
-    background-position: right 30px top 0;
+    background-position: right top;
+    background-image: url("../img/mastercard-copyright.svg");
 
-    &--icon {
-      background-image: url("../img/mastercard-copyright.svg");
-
-      @include mobile-m {
-        background-image: none;
-      }
+    @include mobile-m {
+      background-size: 15px 15px;
     }
   }
 

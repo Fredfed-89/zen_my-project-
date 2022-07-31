@@ -22,12 +22,14 @@
   }
 
   &__right-side {
+    margin-left: 10px;
     width: 100%;
     max-width: 480px;
     align-self: center;
 
     @include mobile-l {
       margin-bottom: 20px;
+      margin-left: 0;
       max-width: none;
     }
   }

@@ -8,7 +8,7 @@
   z-index: 120;
   background-color: var(--white);
 
-  @include mobile-l {
+  @include macbook {
     padding: 5px 0;
   }
 

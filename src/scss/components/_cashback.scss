@@ -10,7 +10,7 @@
     width: 100%;
     max-width: 600px;
 
-    @include mobile-l {
+    @include macbook {
       max-width: none;
     }
   }
