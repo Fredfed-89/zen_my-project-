@@ -1,0 +1,48 @@
+.care {
+  &__inner {
+    @include flex-sb;
+
+    @include mobile-l {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left-side {
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+
+    @include mobile-l {
+      margin-bottom: 20px;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__text-top {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  &__text-middle {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text-bottom {
+    margin: 0;
+    color: var(--black);
+  }
+
+  &__image {
+    height: 100%;
+    max-height: 587px;
+    max-width: 585px;
+    width: 100%;
+  }
+}

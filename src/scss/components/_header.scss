@@ -1,0 +1,199 @@
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--header-border);
+  z-index: 120;
+  background-color: var(--white);
+
+  @include mobile-l {
+    padding: 5px 0;
+  }
+
+  @include mobile-m {
+    padding: 0;
+  }
+
+  &__container {
+    @include flex-all-sb;
+  }
+
+  &__logos {
+    margin-right: 30px;
+
+    @include macbook {
+      margin-right: 0;
+    }
+  }
+
+  .logo {
+    margin-right: 17px;
+  }
+
+  &__nav {
+    @include flex-sb;
+  }
+
+  &__list {
+    @include flex-all-sa;
+
+    z-index: 100;
+
+    @include macbook {
+      position: absolute;
+      padding-top: 50px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      align-items: center;
+      white-space: nowrap;
+      justify-content: center;
+      flex-direction: column;
+      background-color: var(--white);
+      transition: 0.3s;
+      transform: translateX(-100%);
+    }
+
+    @include mobile-m {
+      justify-content: flex-start;
+    }
+  }
+
+  &__item {
+    &:nth-child(1) {
+      margin-right: 22px;
+
+      @include for-desktop {
+        margin-right: 30px;
+      }
+
+      @include macbook {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-right: 475px;
+
+      @include for-desktop {
+        margin-right: 30px;
+      }
+
+      @include macbook {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 30px;
+
+      @include macbook {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      margin-right: 30px;
+
+      @include macbook {
+        margin-right: 0;
+      }
+    }
+
+    &:nth-child(5) {
+      margin-right: 40px;
+
+      @include macbook {
+        margin-right: 0;
+      }
+
+      @include mobile-m {
+        margin-bottom: 20px;
+      }
+    }
+
+    @include macbook {
+      text-transform: uppercase;
+      padding: 10px;
+    }
+  }
+
+  &__item-link {
+    font-size: 16px;
+    color: var(--light-black);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      font-weight: 700;
+      color: var(--color-red);
+    }
+
+    &--btn {
+      padding: 10px 32px 11px;
+      border: 1px solid var(--black);
+      border-radius: 48px;
+      font-size: 18px;
+      background-image: linear-gradient(#FF9C00, #FFE000);
+      background-repeat: no-repeat;
+      background-size: 100% 0%;
+      white-space: nowrap;
+      transition: background-size 0.3s;
+
+      &:hover {
+        font-weight: 400;
+        background-size: 100% 100%;
+        color: var(--light-black);
+        background-position: 50% 100%;
+      }
+    }
+
+    @include macbook {
+      font-size: 22px;
+    }
+
+    @include mobile-m {
+      font-size: 20px;
+    }
+
+    @include mobile-s {
+      font-size: 16px;
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  z-index: 100;
+
+  @include macbook {
+    display: block;
+  }
+
+  @include mobile-s {
+    position: relative;
+    top: 1px;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.hamburger-label {
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+  text-transform: uppercase;
+
+  @include mobile-s {
+    display: none;
+  }
+}
+
+.is-active {
+  transform: translateX(0%);
+}

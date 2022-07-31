@@ -1,0 +1,95 @@
+.hero {
+  margin-top: 80px;
+  padding-top: 40px;
+
+  @include mobile-s {
+    padding-top: 15px;
+  }
+
+  &__inner {
+    @include flex-sb;
+
+    @include macbook {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left-inner {
+    @include flex;
+
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    max-width: 480px;
+
+    @include macbook {
+      flex-wrap: wrap;
+      max-width: 650px;
+    }
+  }
+
+  &__left-play-inner {
+    @include flex;
+
+    @include macbook {
+      display: none;
+    }
+  }
+
+  &__left-play {
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 29px 29px;
+    background-position: top;
+    background-image: url("../img/hero-icon-play.svg");
+  }
+
+  &__left-top {
+    @include flex;
+
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black);
+  }
+
+  &__title-inner {
+    width: 100%;
+    max-width: 400px;
+
+    @include macbook {
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-weight: 400;
+    font-size: 42px;
+    max-width: 370px;
+    width: 100%;
+    line-height: 1.2;
+    color: var(--light-black);
+
+    @include mobile-s {
+      font-size: 34px;
+    }
+  }
+
+  &__left-descr {
+    margin: 0;
+    margin-bottom: 13px;
+    color: var(--light-black);
+  }
+
+  &__image {
+    height: 100%;
+    max-height: 546px;
+    max-width: 585px;
+    width: 100%;
+  }
+}

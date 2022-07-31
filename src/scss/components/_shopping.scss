@@ -1,0 +1,50 @@
+.shopping {
+  &__inner {
+    @include flex-sb;
+
+    @include mobile-l {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left-side {
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+
+    @include mobile-l {
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    max-width: 480px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: right 30px top 0;
+
+    &--icon {
+      background-image: url("../img/mastercard-copyright.svg");
+
+      @include mobile-m {
+        background-image: none;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  &__icons {
+    @include flex-sb;
+
+    width: 100%;
+    max-width: 201px;
+  }
+}

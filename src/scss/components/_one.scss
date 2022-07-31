@@ -1,0 +1,35 @@
+.one {
+  &__inner {
+    @include flex-sb;
+
+    @include mobile-l {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left-side {
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+
+    @include mobile-l {
+      margin-bottom: 20px;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 19px;
+  }
+
+  &__text-top {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  &__text-middle {
+    margin: 0;
+  }
+}

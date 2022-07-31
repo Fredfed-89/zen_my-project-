@@ -1,0 +1,41 @@
+.fees {
+  &__inner {
+    @include flex-sb;
+
+    @include mobile-l {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    picture {
+      @include mobile-l {
+        order: 2;
+      }
+    }
+  }
+
+  &__right-side {
+    width: 100%;
+    max-width: 480px;
+    align-self: center;
+
+    @include mobile-l {
+      margin-bottom: 20px;
+      max-width: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__text-top {
+    margin: 0;
+    margin-bottom: 11px;
+  }
+
+  &__text-bottom {
+    margin: 0;
+  }
+}
