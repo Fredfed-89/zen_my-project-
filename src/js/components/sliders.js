@@ -1,13 +1,13 @@
-import Swiper from 'swiper/bundle';
+// import Swiper from 'swiper/bundle';
 
-const mySwiper = new Swiper('.swiper', {
-  // modules: [Navigation, Pagination],
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+// const mySwiper = new Swiper('.swiper', {
+//   // modules: [Navigation, Pagination],
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
